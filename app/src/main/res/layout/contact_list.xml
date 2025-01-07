@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recorded_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/button_popup"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/startLayout"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:outlineSpotShadowColor="@color/colorpink">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_thumbnail" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/phone_number_data"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/startLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:text="jagadish"
+        android:layout_marginStart="10dp"
+        android:textColor="#FFFFFF" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
